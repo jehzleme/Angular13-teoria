@@ -1,0 +1,23 @@
+<div class="class">
+    <h2>Two way data binding</h2>
+    <form>
+        <input
+        type="text"
+        [(ngModel)]="name"
+        name="name"
+        placeholder="Digite o seu nome"
+        />
+        <input type="submit" value="Enviar"/>
+    </form>
+    <p>O nome é: {{name}}</p>
+    <form>
+        <input
+        type="number"
+        [(ngModel)]="age"
+        age="age"
+        placeholder="Digite sua idade"
+        />
+        <input type="submit" value="Enviar">
+    </form>
+    <p>A idade é: {{age}}</p>
+</div>
